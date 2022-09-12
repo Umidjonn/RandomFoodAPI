@@ -27,9 +27,9 @@ const createMeal = (meal) => {
 		<div class="row">
 			<div class="columns five">
 				<img class="mt-5" src="${meal.strMealThumb}" alt="Meal Image" width=300 heigth=300 >
-				${meal.strCategory ? `<p><strong>Category:</strong> ${meal.strCategory}</p>` : ''}
-				${meal.strArea ? `<p><strong>Area:</strong> ${meal.strArea}</p>` : ''}
-				${meal.strTags ? `<p><strong>Tags:</strong> ${meal.strTags.split(',').join(', ')}</p>` : ''}
+				${meal.strCategory ? `<p><strong>Toifa:</strong> ${meal.strCategory}</p>` : ''}
+				${meal.strArea ? `<p><strong>Hudud:</strong> ${meal.strArea}</p>` : ''}
+				${meal.strTags ? `<p><strong>Ovqat turi:</strong> ${meal.strTags.split(',').join(', ')}</p>` : ''}
 				<h5>Ingredients:</h5>
 				<ul>
 					${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
@@ -42,7 +42,7 @@ const createMeal = (meal) => {
 		</div>
 		${meal.strYoutube ? `
 		<div class="row">
-			<h5>Video Recipe</h5>
+			<h5>Tayyorlash usuli</h5>
 			<div class="videoWrapper">
 				<iframe width="100" height="100"
 				src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">
