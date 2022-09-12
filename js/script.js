@@ -13,12 +13,12 @@ get_meal_btn.addEventListener('click', () => {
 
 const createMeal = (meal) => {
 	const ingredients = [];
-	// Get all ingredients from the object. Up to 20
+	// 20 tagacha olingan nomlar
 	for (let i=1; i<=20; i++) {
 		if(meal[`strIngredient${i}`]) {
 			ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`)
 		} else {
-			// Stop if no more ingredients
+			// To'xtaish 
 			break;
 		}
 	}
