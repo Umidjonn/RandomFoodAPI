@@ -35,7 +35,7 @@ const createMeal = (meal) => {
 					${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
 				</ul>
 			</div>
-			<div class="">
+			<div class="columns seven">
 				<h4>${meal.strMeal}</h4>
 				<p>${meal.strInstructions}</p>
 			</div>
