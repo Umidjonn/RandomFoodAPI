@@ -13,12 +13,12 @@ get_meal_btn.addEventListener('click', () => {
 
 const createMeal = (meal) => {
 	const ingredients = [];
-	// 20 tagacha olingan nomlar
+	// 20 ta
 	for (let i=1; i<=20; i++) {
 		if(meal[`strIngredient${i}`]) {
 			ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`)
 		} else {
-			// To'xtaish 
+			// To'xtatish 
 			break;
 		}
 	}
