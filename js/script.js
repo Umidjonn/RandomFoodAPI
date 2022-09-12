@@ -26,7 +26,7 @@ const createMeal = (meal) => {
 	const newInnerHTML = `
 		<div class="row">
 			<div class="">
-				<img class="mt-5" src="${meal.strMealThumb}" alt="Meal Image" width=300 heigth=300 >
+				<img class="mt-5 img" src="${meal.strMealThumb}" alt="Meal Image" width='300'heigth='300' >
 				${meal.strCategory ? `<p><strong>Toifa:</strong> ${meal.strCategory}</p>` : ''}
 				${meal.strArea ? `<p><strong>Hudud:</strong> ${meal.strArea}</p>` : ''}
 				${meal.strTags ? `<p><strong>Ovqat turi:</strong> ${meal.strTags.split(',').join(', ')}</p>` : ''}
